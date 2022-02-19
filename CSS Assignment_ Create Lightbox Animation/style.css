@@ -1,0 +1,18 @@
+#content{
+    /* position: 0 ; */
+    visibility:hidden;
+    margin: 5px 0px 0px 50px;
+    opacity:0;
+}
+#content:target{
+    visibility: visible;
+    transition:opacity ease-in-out 1s, margin ease-in-out 1s;
+    
+    opacity:100;
+    margin: 200px 0px 0px 200px;
+    display:flex;
+    height:100px;
+    width:300px;
+    background-color:lightgrey;
+    
+}
