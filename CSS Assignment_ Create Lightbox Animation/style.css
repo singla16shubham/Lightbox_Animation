@@ -1,15 +1,20 @@
 #content{
     /* position: 0 ; */
-    visibility:hidden;
-    margin: 5px 0px 0px 50px;
+    
+   margin-top:5px;
+   margin-left: 50px;
+
     opacity:0;
+    /* background-color: lightgrey; */
+    transition: opacity ease-in-out 1s, transform ease-in-out 1s, margin ease-in-out 1s;
+    transform: scale(0,0);
 }
 #content:target{
-    visibility: visible;
-    transition:opacity ease-in-out 1s, margin ease-in-out 1s;
-    
-    opacity:100;
-    margin: 200px 0px 0px 200px;
+    transform: scale(1,1);
+    visibility: visible;  
+    opacity:1;
+    margin-top: 200px;
+    margin-left: 200px;
     display:flex;
     height:100px;
     width:300px;
